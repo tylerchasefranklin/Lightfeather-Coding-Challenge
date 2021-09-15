@@ -7,4 +7,4 @@ There is an ajax request made to an API which returns JSON data to fill out the 
 
 The form is built using CSS Grid.
 
-I ran out of time to complete the other features of the project. 
+I ran out of time to complete the other features of the project and work on the stylings. 
