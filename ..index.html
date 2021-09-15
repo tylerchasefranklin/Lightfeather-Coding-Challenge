@@ -1,0 +1,56 @@
+<!--This was created by Chase Franklin-->
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Chase Franklin Responsive Grid</title>
+        <style>
+
+            .grid-container {
+              
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(2, minmax(0px, 1fr));
+                grid-template-rows: repeat (auto-fit, minmax(auto, 1fr));
+            }
+
+            .grid-item-container {
+                display: grid;
+                background-color: royalblue;
+                place-items: center center;
+                padding: 5%;
+                overflow: hidden;
+            }
+
+            @media only screen and (max-width: 650px) {
+                .grid-container {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+
+            @media only screen and (max-width: 650px) {
+                .grid-item {
+                    overflow: hidden;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+
+
+        <div class="grid-container">
+            <div class="grid-item-container grid-item-container1">
+                <div class="grid-item">
+                    <img class="grid-image" src="https://source.unsplash.com/random/300x500" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+
+</html>
+<!--This was created by Chase Franklin-->
