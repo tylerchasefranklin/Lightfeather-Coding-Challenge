@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
 
-
   $.ajax({
 
            url: "https://o3m5qixdng.execute-api.us-east-1.amazonaws.com/api/supervisors",
@@ -26,6 +25,30 @@ $(document).ready(function(){
                alert("error");
            }
        });
+
+
+    function submitForm(){
+      $('#submitForm').submit(function(e){
+        e.preventDefault();
+        console.log('Clicked');
+
+        var form = $(this);
+        var url = form.attr('action');
+
+        $.ajax({
+          type: 'POST',
+          url: 'https://o3m5qixdng.execute-api.us-east-1.amazonaws.com/api/submit',
+          data: form.serialize(),
+          success: function(data){
+            console.log(data);
+          }
+        });
+
+      });
+    }
+
+
+
 
 
 });
